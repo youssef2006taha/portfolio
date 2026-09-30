@@ -26,4 +26,4 @@ A modern, high-performance developer portfolio built with React, Vite, Tailwind 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/youssef2006taha/portfolio.git](https://github.com/youssef2006taha/portfolio.git)
+   git clone https://github.com/youssef2006taha/portfolio.git
