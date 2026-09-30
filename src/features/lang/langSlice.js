@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const savedLang = localStorage.getItem('app_lang');
-const initialLang = savedLang === 'en' || savedLang === 'ar' ? savedLang : 'ar';
+const initialLang = savedLang === 'en' || savedLang === 'ar' ? savedLang : 'en';
 
 const initialState = {
   current: initialLang,
