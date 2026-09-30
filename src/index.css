@@ -1,0 +1,175 @@
+/** Imports **/
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400;500;600;700;800&family=Aref+Ruqaa:wght@400;700&family=Marck+Script&display=swap');
+@import "tailwindcss";
+
+/** Variables **/
+
+:root {
+  --container-padding: 32px;
+  --card-padding: 24px;
+
+  --heading-font: "Alexandria", sans-serif;
+  --text-font: "Alexandria", sans-serif;
+
+  /* Light theme */
+  --primary: #8b62ed;
+  --primary-hover: #7448df;
+  --primary-active: #6034c9;
+  --primary-light: #eee8ff;
+  --primary-inverse: #ffffff;
+
+  --bg-main: #ffffff;
+  --bg-secondary: #faf9ff;
+  --bg-surface: #ffffff;
+  --bg-layout: #f5f2ff;
+
+  --text-main: #1d1633;
+  --text-muted: #6f6682;
+  --text-light: #a49bb8;
+  --text-inverse: #ffffff;
+
+  --bg-ball-1: #6d28d9; 
+  --bg-ball-2: #be185d; 
+  --bg-ball-3: #0284c7;
+  
+  --ball-1: #d8b4fe; 
+  --ball-2: #f472b6; 
+  --ball-3: #7dd3fc;
+}
+
+.dark {
+  /* Dark theme */
+  --primary: #a98ff5;
+  --primary-hover: #bba6fa;
+  --primary-active: #9374ed;
+  --primary-light: #30205c;
+  --primary-inverse: #171124;
+
+  --bg-main: #171124;
+  --bg-secondary: #211a32;
+  --bg-surface: #241c38;
+  --bg-layout: #100c1b;
+
+  --text-main: #f8f5ff;
+  --text-muted: #cfc5e2;
+  --text-light: #9d91b3;
+  --text-inverse: #171124;
+
+  --bg-ball-1: #a855f7;
+  --bg-ball-2: #ec4899;
+  --bg-ball-3: #06b6d4;
+
+  --ball-1: #c084fc; 
+  --ball-2: #f472b6; 
+  --ball-3: #38bdf8;
+}
+
+@theme {
+  /* Main */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-active: var(--primary-active);
+  --color-primary-light: var(--primary-light);
+  --color-primary-inverse: var(--primary-inverse);
+
+  /* Backgrounds */
+  --color-bg-main: var(--bg-main);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-layout: var(--bg-layout);
+
+  /* Text */
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-text-light: var(--text-light);
+  --color-text-inverse: var(--text-inverse);
+
+  /* Spacing */
+  --spacing-container: var(--container-padding);
+  --spacing-card: var(--card-padding);
+
+  /* Fonts */
+  --font-heading: var(--heading-font);
+  --font-text: var(--text-font);
+
+  /* else */
+  --color-ball-1: var(--ball-1);
+  --color-ball-2: var(--ball-2);
+  --color-ball-3: var(--ball-3);
+  
+  --color-bg-ball-1: var(--bg-ball-1);
+  --color-bg-ball-2: var(--bg-ball-2);
+  --color-bg-ball-3: var(--bg-ball-3);
+}
+
+
+/** global **/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-text);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.container { /* xsm */
+  padding: 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) { /* sm */
+  .container {
+    padding: 20px;
+    width: 750px;
+  }
+}
+@media (min-width: 992px) { /* md */
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) { /* lg */
+  .container {
+    padding: 25px;
+    width: 1170px;
+  }
+}
+
+
+.font-signature {
+  font-family: "Marck Script", var(--font-heading);
+}
+
+
+.cScroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cScroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+}
+
+.cScroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: background 0.2s ease;
+}
+
+.cScroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary, #3b82f6);
+}
+
+.cScroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+
