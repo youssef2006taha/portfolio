@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Loader2 } from 'lucide-react';
 import SectionHeading from '../../../components/ui/SectionHeading';
-import CustomInput from '../../../components/ui/customInput';
+import CustomInput from '../../../components/ui/CustomInput';
 import emailjs from '@emailjs/browser';
 import { useDispatch, useSelector } from 'react-redux';
 import { showToast } from '../../../features/ui/toast/toastSlice';
